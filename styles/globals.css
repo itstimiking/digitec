@@ -1,0 +1,32 @@
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities;
+
+
+@layer utilities {
+    
+    .clip{
+        clip-path: polygon(0% 100%, 20% 0%, 100% 0%, 100% 100%);
+    }
+
+    .front-page-boxes-height{
+        min-height: 80vh;
+        position: relative;
+        max-height: 170vh;
+    }
+
+    .front-page-blogs-height{
+        min-height: 80vh;
+        position: relative;
+        max-height: 170vh;
+        margin-bottom: 100px
+    }
+
+    .gray{
+        @apply w-screen md:flex front-page-boxes-height mx-auto px-4 md:px-8 text-gray-700 bg-gray-50;
+    }
+
+    .graytowhite{
+        @apply w-screen md:flex front-page-boxes-height mx-auto px-4 md:px-8 text-gray-700 bg-gradient-to-r from-gray-100 to-white;
+    }
+}
