@@ -9,11 +9,12 @@ import HeaderSection2 from '../components/frontpage/header2';
 import SecondSection from '../components/frontpage/secondsection';
 import BlogSection from '../components/blogsection';
 import StaffSection from '../components/staffsection';
+import TestimonySection from '../components/testimonysection';
 
 import { navlinks, boxes} from "../utilities/data";
 import { articles} from "../utilities/articles";
 import { staffs} from "../utilities/staffs";
-import TestimonySection from '../components/testimonysection';
+import { testimonies } from "../utilities/testimonies";
 
 export default function Index() {
 
@@ -47,7 +48,7 @@ export default function Index() {
 
         <StaffSection staffs={staffs} />
 
-        <TestimonySection />
+        <TestimonySection testimonies={ testimonies }/>
 
       </main>
 
