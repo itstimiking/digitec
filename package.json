@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start && next build",
+    "export": "next export"
   },
   "dependencies": {
     "@styled-icons/fa-brands": "^10.26.0",

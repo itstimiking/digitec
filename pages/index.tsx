@@ -13,6 +13,7 @@ import StaffSection from '../components/staffsection';
 import { navlinks, boxes} from "../utilities/data";
 import { articles} from "../utilities/articles";
 import { staffs} from "../utilities/staffs";
+import TestimonySection from '../components/testimonysection';
 
 export default function Index() {
 
@@ -46,6 +47,7 @@ export default function Index() {
 
         <StaffSection staffs={staffs} />
 
+        <TestimonySection />
 
       </main>
 
