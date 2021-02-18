@@ -28,7 +28,7 @@ export default function Index() {
 
       <main className="text-gray-700">
 
-        <header className="flex h-screen">
+        <header className="flex h-screen relative">
 
           {/** Main Jumbotron Header section ----------------------- */}
           <HeaderSection1 />
