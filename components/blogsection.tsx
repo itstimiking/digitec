@@ -21,7 +21,7 @@ export interface BlogSectionProps {
  
 const BlogSection: React.FC<BlogSectionProps> = ({articles}) => {
     return ( 
-        <section className="front-page-blogs-height mb-30">
+        <section className="flex flex-col front-page-blogs-height pb-32">
 
             <div className="px-8 py-24 sm:p24 flex flex-col justify-items-center">
 
@@ -36,11 +36,11 @@ const BlogSection: React.FC<BlogSectionProps> = ({articles}) => {
                 </p>
             </div>
 
-            <div className="flex flex-wrap p-4 w-full h-96 ">
+            <div className="flex flex-wrap p-4 w-full">
 
                 {// BLog Section article cards, 4 cols @lg to @xl, 3 col @md and 2 @sm -------
                     articles.map(article=>(
-                        <div className=" w-full sm:w-1/2 md:w-1/3 xl:w-1/4 px-4 pt-8 lg:pt-0">
+                        <div className=" w-full sm:w-1/2 md:w-1/3 xl:w-1/4 px-4 pt-8 lg:pt-0" key={ article.title}>
 
                             <div className="shadow-md">
 

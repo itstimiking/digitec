@@ -17,16 +17,18 @@
 
     .front-page-blogs-height{
         min-height: 80vh;
-        position: relative;
-        max-height: 170vh;
-        margin-bottom: 100px
+    }
+
+    .front-page-staffs-height{
+        min-height: 50vh;
+        max-height: 200hv;
     }
 
     .gray{
         @apply w-screen md:flex front-page-boxes-height mx-auto px-4 md:px-8 text-gray-700 bg-gray-50;
     }
 
-    .graytowhite{
-        @apply w-screen md:flex front-page-boxes-height mx-auto px-4 md:px-8 text-gray-700 bg-gradient-to-r from-gray-100 to-white;
+    .staffsection{
+        @apply w-screen h-full flex flex-col relative mx-auto px-4 md:px-8 text-gray-700 bg-gray-50 pb-32;
     }
 }
