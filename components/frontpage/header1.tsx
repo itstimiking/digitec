@@ -11,7 +11,7 @@ const HeaderSection1: React.FC = () => {
 
             {/** SUB Header ----------------------- */}
             <p className="capitalize font-bold text-xl md:text-3xl text-yellow-500 pt-4"> 
-              ICT AND PROFESSIONAL COURSES 
+              ICT AND PROFESSIONAL COURSE
             </p>
 
             {/** Text ----------------------- */}
