@@ -17,13 +17,25 @@ const TestimonySection: React.FC<TestimonySectionProps> = ({testimonies}) => {
         <section className="flex flex-wrap w-full bg-blue-500 text-indigo-50 mx-auto ">
 
             {
-                testimonies.slice(0,2).map(testimony => (
-                    <div className="w-full sm:w-1/2 h-full px-8 py-32 border-r-2 border-blue-600 border-opacity-20">
+                testimonies.slice(0,2).map((testimony, index) => (
+                    <div 
+                        className="w-full sm:w-1/2 h-full px-8 py-32 border-r-2 border-blue-600 border-opacity-20"
+                        key={index}
+                    >
 
                         <p className="text-2xl font-bold opacity-60 pb-8">{testimony.company}</p>
 
                         <blockquote className="text-sm">
-                            {testimony.comment}
+                            <span className="stylistic-quote-mark" aria-hidden="true">
+                                &ldquo;
+                            </span>
+                                <span className="pl-12">
+                                    {testimony.comment}
+                                </span>
+
+                            <span className="stylistic-quote-mark" aria-hidden="true">
+                                &ldquo;
+                            </span>
                         </blockquote>
 
                         <div className="flex pt-8">
@@ -33,7 +45,7 @@ const TestimonySection: React.FC<TestimonySectionProps> = ({testimonies}) => {
                                     {testimony.firstname} {testimony.lastname}
                                 </span>
                                 <span className="text-xs pt-1">
-                                    {testimony.position} {testimony.company}
+                                    {testimony.position}, {testimony.company}
                                 </span>
                             </div>
                         </div>

@@ -22,7 +22,7 @@ const StaffSection: React.FC<StaffSectionProps> = ({staffs}) => {
 
                 {/* Staff section heading ------------------------------------*/}
                 <h2 className="text-bold text-2xl w-full text-center">
-                    Our Staffs
+                    Meet our team
                 </h2>
 
                 {/* Staff section sub heading -----------------------------*/}
@@ -38,12 +38,15 @@ const StaffSection: React.FC<StaffSectionProps> = ({staffs}) => {
                     staffs.map(staff => (
                         <div className=" w-full sm:w-1/2 md:w-1/3 xl:w-1/4 px-4 pt-4 lg:pt-0 mt-8" key={ staff.id}>
                             <div className="flex flex-col flex-wrap content-center">
-                                <img src={staff.avatar} alt="" className="object-cover h-40 w-40 bg-white ring-4 ring-gray-100 ring-offset-4 ring-offset-gray-50" />
+
+                                <img src={staff.avatar} alt="" className="object-cover rounded-full h-40 w-40 bg-white ring-4 ring-gray-100 ring-offset-4 ring-offset-gray-50" />
+                                
                                 <h3 className="text-center pt-4 font-bold">
                                     
                                     {staff.firstname} {staff.lastname}
                                     
                                 </h3>
+                                
                                 <p className="text-center text-xs">
                                     
                                     {staff.dept}

@@ -1,8 +1,8 @@
 const HeaderSection1: React.FC = () => {
     return ( 
-        <section className="absolute h-full w-full md:w-1/2 pl-4 md:pl-8 md:relative z-20">
+        <section className="h-full w-full md:w-1/2 pb-32 md:pb-0 px-4 md:pl-8 md:relative z-20">
 
-          <div className="h-1/5 w-full pt-40 md:pt-52 lg:pt-60 xl:pt-72 relative z-20">
+          <div className="h-1/5 w-full pt-32 md:pt-40 relative z-20">
 
             {/** Main Jumbotron Header ----------------------- */}
             <p className="capitalize font-extrabold text-6xl md:text-7xl text-gray-800"> 

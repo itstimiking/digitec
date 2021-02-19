@@ -8,7 +8,7 @@ import { Bars } from '@styled-icons/fa-solid';
 interface navlink {// Each link interface
     title: string,
     url: string,
-    icon: JSX.Element
+    icon?: JSX.Element
 }
 
 interface Props { // Array of all links 
@@ -22,10 +22,10 @@ const NavTop: React.FC<Props> = ({ links }) => {
 
     return (
         <nav className="absolute h-20 w-full z-30">
-            <div className="container mx-auto px-4 flex flex-wrap space-x-8 content-center " >
+            <div className="mx-auto px-8 md:pl-12 flex flex-wrap space-x-8 content-center " >
 
                 {/* Digitec Logo -------------------------------------*/}
-                <div className="flex flex-wrap content-center h-20 xl:px-8 ">
+                <div className="flex flex-wrap content-center h-20">
                     <img src="/images/digitec.png" className="w-16" />
                 </div>
 
@@ -36,10 +36,12 @@ const NavTop: React.FC<Props> = ({ links }) => {
 
                     {// Show full links at large screen size ----------------------------
                         links.map(link => (
-                            <div className="hidden lg:block mr-4 hover:text-gray-400"
+                            <div className="hidden lg:block mr-5 hover:text-gray-400"
                                 key={link.title + "aa"}
                             >
-                                { link.icon}
+                                <span className="text-blue-200">
+                                    { link.icon}
+                                </span>
                                 <Link href={link.url} passHref>
                                     <a>{link.title}</a>
                                 </Link>
@@ -49,10 +51,12 @@ const NavTop: React.FC<Props> = ({ links }) => {
 
                     {// Show only 3 initial top nav links at medium screen size ---------------------
                         links.slice(0, 3).map(link => (
-                            <div className="hidden md:block lg:hidden mr-4 hover:text-gray-400"
+                            <div className="hidden md:block lg:hidden mr-5 hover:text-gray-400"
                                 key={link.title + "aa"}
                             >
-                                { link.icon}
+                                <span className="text-blue-200">
+                                    { link.icon}
+                                </span>
                                 <Link href={link.url} passHref>
                                     <a>{link.title}</a>
                                 </Link>
@@ -80,7 +84,10 @@ const NavTop: React.FC<Props> = ({ links }) => {
                                     <div className="hidden md:block lg:hidden mr-4 hover:text-gray-400 pb-4"
                                         key={link.title + "md"}
                                     >
-                                        { link.icon}
+                                        <span className="text-blue-200">
+                                            { link.icon}
+                                        </span>
+
                                         <Link href={link.url} passHref>
                                             <a>{link.title}</a>
                                         </Link>
@@ -113,7 +120,10 @@ const NavTop: React.FC<Props> = ({ links }) => {
                                     <div className="block md:hidden mr-4 hover:text-gray-400 pb-4"
                                         key={link.title + "md"}
                                     >
-                                        { link.icon}
+                                        <span className="text-blue-200">
+                                            { link.icon}
+                                        </span>
+                                        
                                         <Link href={link.url} passHref>
                                             <a>{link.title}</a>
                                         </Link>

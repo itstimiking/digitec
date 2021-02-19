@@ -7,7 +7,7 @@ const HeaderSection2: React.FC = () => {
 
           <img
             src="/images/digitec_image_student.jpg" 
-            className="object-cover h-full w-1/2 opacity-40 md:opacity-100" 
+            className="object-cover h-full opacity-40 md:opacity-100" 
           />
 
         </section>

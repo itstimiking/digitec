@@ -28,7 +28,16 @@
         @apply w-screen md:flex front-page-boxes-height mx-auto px-4 md:px-8 text-gray-700 bg-gray-50;
     }
 
+    .footerHeight{
+        @apply py-32 w-full bg-gray-600 relative flex flex-wrap flex-col;
+        min-height: 40vh;
+    }
+
     .staffsection{
         @apply w-screen h-full flex flex-col relative mx-auto px-4 md:px-8 text-gray-700 bg-gray-200 pb-32;
+    }
+
+    .stylistic-quote-mark{
+        @apply text-blue-900 text-6xl italic font-extrabold absolute opacity-40 pb-20
     }
 }

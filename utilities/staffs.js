@@ -34,15 +34,6 @@ export const staffs = [
         dept: "Sales Admin",
         about: "Ms Glory is in charge of sales at Digitec Hub",
         social:["http://twitter.com/igho", "http://www.linkedin.com/in/igho"]
-    }
-    ,{
-        id: 5,
-        firstname: "Timi",
-        lastname: "Ambaye",
-        avatar: "/images/timi.jpg",
-        dept: "Business Development Manager",
-        about: "Mr Timi is the Business Dev Manager of Digitec Hub",
-        social:["http://twitter.com/igho", "http://www.linkedin.com/in/igho"]
     },
     {
         id: 6,
@@ -52,8 +43,16 @@ export const staffs = [
         dept: "Marketing Manager",
         about: "Mr New is the Admin of Digitec Hub",
         social:["http://twitter.com/igho", ""]
-    }
-    ,
+    },
+    {
+        id: 5,
+        firstname: "Timi",
+        lastname: "Ambaye",
+        avatar: "/images/timi.jpg",
+        dept: "Business Development Manager",
+        about: "Mr Timi is the Business Dev Manager of Digitec Hub",
+        social:["http://twitter.com/igho", "http://www.linkedin.com/in/igho"]
+    },
     {
         id: 7,
         firstname: "Temp",
