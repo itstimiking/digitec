@@ -19,7 +19,7 @@ const TestimonySection: React.FC<TestimonySectionProps> = ({testimonies}) => {
             {
                 testimonies.slice(0,2).map((testimony, index) => (
                     <div 
-                        className="w-full sm:w-1/2 h-full px-8 py-32 border-r-2 border-blue-600 border-opacity-20"
+                        className="w-full sm:w-1/2 h-full px-8 py-10 sm:py-32 border-r-2 border-blue-600 border-opacity-20"
                         key={index}
                     >
 

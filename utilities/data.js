@@ -5,7 +5,7 @@ import { Home, Phone, BookOpen, SignInAlt, BookReader, AddressBook, ShoppingBag,
 export const navlinks = [ // Top navigation links----------------------------
   { title: "Home", url: "/", icon: <Home size="27" className="pb-2" /> },
   { title: "Courses", url: "/courses", icon: <BookReader size="27" className="pb-2" /> },
-  { title: "Prices", url: "/pricing", icon: <ShoppingBag size="27" className="pb-2" /> },
+  { title: "Updates / Events", url: "/pricing", icon: <ShoppingBag size="27" className="pb-2" /> },
   { title: "About", url: "/about", icon: <AddressBook size="27" className="pb-2" /> },
   { title: "Contact", url: "/contact", icon: <Phone size="27" className="pb-2" /> },
 ];

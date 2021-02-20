@@ -13,15 +13,16 @@ interface navlink {// Each link interface
 
 interface Props { // Array of all links 
     links: navlink[],
+    bgColor?: boolean,
 }
 
-const NavTop: React.FC<Props> = ({ links }) => {
+const NavTop: React.FC<Props> = ({ links , bgColor}) => {
 
     const [linksMd, setLinksMd] = useState(false);
     const [linksSm, setLinksSm] = useState(false);
 
     return (
-        <nav className="absolute h-20 w-full z-30">
+        <nav className={"absolute h-20 w-full z-30 " + (bgColor ? "bg-white" : "")}>
             <div className="mx-auto px-8 md:pl-12 flex flex-wrap space-x-8 content-center " >
 
                 {/* Digitec Logo -------------------------------------*/}

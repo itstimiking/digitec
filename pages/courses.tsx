@@ -17,7 +17,7 @@ export default function Courses() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <NavTop links={navlinks} />
+      <NavTop links={navlinks} bgColor={true}/>
       
 
       <main className="text-gray-700">
