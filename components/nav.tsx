@@ -113,7 +113,7 @@ const NavTop: React.FC<Props> = ({ links , bgColor}) => {
                         </button>
 
                         <div className={
-                            linksSm ? "flex flex-col absolute z-40 w-80 bg-white mt-4 -ml-4 pl-4 pt-4 shadow-md"
+                            linksSm ? "flex flex-col absolute z-40 w-60 bg-white mt-4 -ml-4 pl-4 pt-4 shadow-md"
                             : "hidden"}>
 
                                 {// Nav links for mobile screen ---------------------
