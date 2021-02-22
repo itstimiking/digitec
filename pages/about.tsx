@@ -6,9 +6,9 @@ import NavTop from '../components/nav';
 import StaffSection from '../components/staffsection';
 import TestimonySection from '../components/testimonysection';
 
-import { navlinks} from "../utilities/data";
-import { staffs} from "../utilities/staffs";
-import { testimonies } from "../utilities/testimonies";
+import { navlinks} from "../data/data";
+import { staffs} from "../data/staffs";
+import { testimonies } from "../data/testimonies";
 import FooterSection from '../components/footersection';
 
 export default function About() {

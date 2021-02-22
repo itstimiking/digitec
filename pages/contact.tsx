@@ -5,7 +5,7 @@ import NavTop from '../components/nav';
 
 import FooterSection from '../components/footersection';
 
-import { navlinks} from "../utilities/data";
+import { navlinks} from "../data/data";
 
 export default function Contact() {
 

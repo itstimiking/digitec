@@ -11,10 +11,10 @@ import BlogSection from '../components/blogsection';
 import StaffSection from '../components/staffsection';
 import TestimonySection from '../components/testimonysection';
 
-import { navlinks, boxes} from "../utilities/data";
-import { articles} from "../utilities/articles";
-import { staffs} from "../utilities/staffs";
-import { testimonies } from "../utilities/testimonies";
+import { navlinks, boxes} from "../data/data";
+import { articles} from "../data/articles";
+import { staffs} from "../data/staffs";
+import { testimonies } from "../data/testimonies";
 import FooterSection from '../components/footersection';
 
 export default function Index() {
