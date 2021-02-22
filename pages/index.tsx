@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 import NavTop from '../components/nav';
 import HeaderSection1 from '../components/frontpage/header1';
@@ -16,6 +18,7 @@ import { articles} from "../data/articles";
 import { staffs} from "../data/staffs";
 import { testimonies } from "../data/testimonies";
 import FooterSection from '../components/footersection';
+
 
 export default function Index() {
 
@@ -34,15 +37,22 @@ export default function Index() {
         <header className="flex py-50 relative pl-4">
 
           {/** Main Jumbotron Header section ----------------------- */}
+          
+
           <HeaderSection1 />
 
+          
+
           {/** Header image section -------------------------------- */}
+          
           <HeaderSection2 />
+
+          
 
         </header>
 
         {/* Boxes section whith a side heading ---------------------*/}
-
+        
         <SecondSection heading={boxes.heading} contents={boxes.content} />
 
         <BlogSection articles={articles} />

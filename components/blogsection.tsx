@@ -1,3 +1,6 @@
+import FadeIn from './animation/fadeIn';
+import FadeInUp from './animation/fadeinUp';
+import SlideIn from './animation/slideIn';
 interface author{
     firstname: string,
     lastname: string,
@@ -26,23 +29,30 @@ const BlogSection: React.FC<BlogSectionProps> = ({articles}) => {
             <div className="px-8 py-24 sm:p24 flex flex-col justify-items-center">
 
                 {/* BLOG section heading ------------------------------------*/}
-                <h2 className="text-bold text-2xl w-full text-center">
-                    From the blog
-                </h2>
+                <FadeIn>
+                    <h2 className="text-bold text-2xl w-full text-center">
+                        From the blog
+                    </h2>
+                </FadeIn>
 
                 {/* BLog section sub heading -----------------------------*/}
-                <p className="text-center w-full md:w-2/3 lg:w-2/5 mx-auto pt-5">
-                    Consequuntur illo beatae saepe commodi alias veniam ullam quaerat voluptatem odit eos aspernatur.
-                </p>
+                <SlideIn>
+                    <p className="text-center w-full md:w-2/3 lg:w-2/5 mx-auto pt-5">
+                        Consequuntur illo beatae saepe commodi alias veniam ullam quaerat voluptatem odit eos aspernatur.
+                    </p>
+                </SlideIn>
             </div>
 
             <div className="flex flex-wrap p-4 w-full">
-
+                
                 {// BLog Section article cards, 4 cols @lg to @xl, 3 col @md and 2 @sm -------
                     articles.map(article=>(
+                        
                         <div className=" w-full sm:w-1/2 md:w-1/3 xl:w-1/4 px-4 pt-8 lg:pt-0" key={ article.title}>
 
                             <div className="shadow-md">
+
+                            <FadeInUp>
 
                                 {/* Article featured image --------------------------------*/}
 
@@ -83,11 +93,14 @@ const BlogSection: React.FC<BlogSectionProps> = ({articles}) => {
                                         </div>
                                     </div>
                                 </div>
+                                </FadeInUp>
                             </div>
                             
                         </div>
                     ))
+
                 }
+                
             </div>
 
         </section>

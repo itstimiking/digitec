@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Head from 'next/head';
+import { motion } from 'framer-motion';
 
 import NavTop from '../components/nav';
 

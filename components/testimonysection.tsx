@@ -1,3 +1,5 @@
+import SlideIn from "./animation/slideIn";
+
 interface testimony {
     firstname: string,
     lastname: string,
@@ -22,7 +24,7 @@ const TestimonySection: React.FC<TestimonySectionProps> = ({testimonies}) => {
                         className="w-full sm:w-1/2 h-full px-8 py-10 sm:py-32 border-r-2 border-blue-600 border-opacity-20"
                         key={index}
                     >
-
+                        <SlideIn>
                         <p className="text-2xl font-bold opacity-60 pb-8">{testimony.company}</p>
 
                         <blockquote className="text-sm">
@@ -49,7 +51,7 @@ const TestimonySection: React.FC<TestimonySectionProps> = ({testimonies}) => {
                                 </span>
                             </div>
                         </div>
-
+                        </SlideIn>
                     </div>
                 ))
             }
