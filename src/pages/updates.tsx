@@ -20,22 +20,22 @@ const Updates = () => {
 
     const getarticles = async (num) => {
 
-        if(num===1){
-            const data = await fetch(`http://localhost:1337/articles?&_limit=2`);
-            const articles = await data.json();
-            setArticles(articles)
-        }else{
-            const data = await fetch(`http://localhost:1337/articles?_start=${+num}&_limit=2`);
-            const articles = await data.json();
-            setArticles(articles)
-            console.log("articles ----------------- got -----------", num)
-        }
+        // if(num===1){
+        //     const data = await fetch(`http://localhost:1337/articles?&_limit=2`);
+        //     const articles = await data.json();
+        //     setArticles(articles)
+        // }else{
+        //     const data = await fetch(`http://localhost:1337/articles?_start=${+num}&_limit=2`);
+        //     const articles = await data.json();
+        //     setArticles(articles)
+        //     console.log("articles ----------------- got -----------", num)
+        // }
 
-        if (count < 1) {
-            const count = await fetch("http://localhost:1337/articles/count");
-            const countnum = await count.json();
-            setCount(countnum)
-        }    
+        // if (count < 1) {
+        //     const count = await fetch("http://localhost:1337/articles/count");
+        //     const countnum = await count.json();
+        //     setCount(countnum)
+        // }    
     };
 
 

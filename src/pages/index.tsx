@@ -19,6 +19,8 @@ import { staffs} from "../data/staffs";
 import { testimonies } from "../data/testimonies";
 import FooterSection from '../components/footersection';
 
+import {getAllPostsData} from "../lib/getPostData";
+
 
 export default function Index({articles}) {
 
@@ -73,8 +75,8 @@ export default function Index({articles}) {
 }
 
 export async function getStaticProps({ params }) {
-  const data = await fetch("http://localhost:1337/articles");
-  const articles = await data.json();
+  
+  const articles = await getAllPostsData();
   
   return {
     props: { articles },
